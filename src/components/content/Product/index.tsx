@@ -24,7 +24,7 @@ const Product: React.FC = () => {
           <div className="d-flex flex-column col justify-content-center">
             <div className="my-5 text-start">
               <Title className="title-section text-white">CheckSpeech AI</Title>
-              <p className="subtitle-section text-secondary fs-6 mb-0 mt-5">
+              <p className="subtitle-section text-secondary fs-6 mb-0 mt-5 text-center">
                 O CheckSpeech AI é um conjunto de APIs de conversão de fala em
                 textos, bem como a interpretação do sentimento dominante nos
                 dizeres. Nossa solução é treinada em mais de 500.000 horas de

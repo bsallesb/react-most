@@ -31,6 +31,7 @@ export const Title = styled.h2`
     font-size: 3rem;
   }
 `;
+
 export const SubTitle = styled.p`
   @media (max-width: 575px) {
     font-size: 0.9rem;

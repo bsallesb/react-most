@@ -18,7 +18,7 @@ export const Pills = styled.div`
 
 export const Title = styled.h2`
   @media (max-width: 575px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   @media (min-width: 576px) {

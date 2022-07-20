@@ -34,13 +34,11 @@ export default createGlobalStyle`
     .fs-8 { font-size: 0.8rem; }
 
     .title-section {
-        font-size: 4rem; 
         font-weight: bold; 
         text-align: center;
     }
-
+v
     .subtitle-section {
-        font-size: 1.2rem; 
         font-weight: bold; 
         text-align: center;
     }
