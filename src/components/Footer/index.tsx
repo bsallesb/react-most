@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
           <div className="col-md-6 col-lg-3">
             <div className="d-flex flex-column align-items-center">
               <ul className="d-flex flex-column p-0">
-                <li className="text-white text-center text-sm-start list-unstyled px-2 fs-5 fw-bold">
+                <li className="text-white text-center text-md-start list-unstyled px-2 fs-5 fw-bold">
                   Contato
                 </li>
                 <SocialMedia
