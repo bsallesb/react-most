@@ -1,5 +1,6 @@
 import { memo } from 'react';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Container } from 'react-bootstrap';
 import {
   BsFacebook,
@@ -9,7 +10,6 @@ import {
   BsWhatsapp,
 } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
 
 import Logo from 'assets/logo-most.png';
 
@@ -17,7 +17,7 @@ import List from 'components/List';
 import Pill from 'components/Pill';
 import SocialMedia from 'components/SocialMedia';
 
-import { MainFooter } from './styles';
+import { Creator, MainFooter } from './styles';
 
 const Footer: React.FC = () => {
   return (
@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
       <Container>
         <div className="d-md-flex row justify-content-between align-items-start py-1">
           <div className="col-12 col-sm-6 col-lg-3 text-center text-sm-start px-3 mb-3 mb-lg-0">
-            <Link to="/">
+            <AnchorLink href="#products" offset="100">
               <img src={Logo} alt="Logo Most" />
-            </Link>
+            </AnchorLink>
             <p className="text-white fs-8 mt-3">
               A MOST tem por objetivo levar tecnologia e inteligência
               operacional para as grandes e médias empresas.
@@ -110,14 +110,14 @@ const Footer: React.FC = () => {
         </div>
         <h2 className="fs-8 text-center text-white m-0 pt-3">
           create by:{' '}
-          <a
+          <Creator
             href="https://www.linkedin.com/in/brenosales/"
             target="_blank"
             rel="noreferrer"
             className="text-decoration-none"
           >
             Breno Sales
-          </a>
+          </Creator>
         </h2>
       </Container>
     </MainFooter>

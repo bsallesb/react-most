@@ -8,7 +8,12 @@ interface ISocialMediaProps {
 
 const SocialMedia: React.FC<ISocialMediaProps> = ({ icon, link, name }) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer" className="mx-2 my-2">
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="mx-2 my-2 text-decoration-none"
+    >
       {icon} <span className="text-white fs-8 ps-2">{name}</span>
     </a>
   );

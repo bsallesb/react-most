@@ -7,5 +7,4 @@ export const Button = styled(AnchorLink)`
   height: 75px;
   background-color: #0693e3;
   color: #fff;
-  -webkit-text-stroke: 0.5px #000;
 `;

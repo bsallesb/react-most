@@ -14,7 +14,7 @@ const List: React.FC<IListProps> = ({ name, link, icon }) => {
     <li className="list-unstyled px-4 my-3">
       <AnchorLink
         href={link}
-        offset="100"
+        offset="90"
         className="text-decoration-none text-white"
       >
         {icon && <MdKeyboardArrowRight size={26} />} {name}

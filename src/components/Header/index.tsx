@@ -1,9 +1,9 @@
 import { memo, useCallback, useState } from 'react';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Container, Stack } from 'react-bootstrap';
 import { BiMenu } from 'react-icons/bi';
 import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
 
 import Logo from 'assets/logo-most.png';
 
@@ -26,9 +26,9 @@ const Header: React.FC = () => {
       <MenuOffcanvas show={showMobileMenu} onHide={handleToggleMenu} />
       <Container>
         <Stack direction="horizontal" className="justify-content-between py-1">
-          <Link to="/">
-            <img src={Logo} alt="Logo Most" />
-          </Link>
+          <AnchorLink href="#products" offset={100}>
+            <img src={Logo} alt="Logo Most" className="img-fluid" />
+          </AnchorLink>
           <ul className="d-none d-xl-flex m-0">
             <List link="#solutions" name="Soluções" icon />
             <List link="#our-clients" name="Clientes" icon />
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
           </div>
           <button
             type="button"
-            className="d-block d-xl-none bg-transparent"
+            className="d-block d-xl-none bg-transparent border-0"
             onClick={handleToggleMenu}
           >
             <BiMenu color="white" size={40} />

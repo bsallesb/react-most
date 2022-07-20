@@ -25,7 +25,7 @@ const Pill: React.FC<IPillProps> = ({
     <BorderPill
       href={id}
       className={`d-flex py-2 bg-${background} ${className} text-white my-2 align-items-center text-decoration-none`}
-      offset={100}
+      offset={90}
       onClick={() => onClick?.()}
     >
       {icon && (

@@ -7,9 +7,8 @@ import QRcode from 'assets/frame.svg';
 
 import Pill from 'components/Pill';
 import Section from 'components/Section';
-import SectionTitle from 'components/SectionTitle';
 
-import { Image, QRcodeBox, Pills } from './styles';
+import { Image, QRcodeBox, Pills, Title } from './styles';
 
 const Product: React.FC = () => {
   return (
@@ -23,19 +22,17 @@ const Product: React.FC = () => {
             />
           </div>
           <div className="d-flex flex-column col justify-content-center">
-            <SectionTitle
-              title="CheckSpeech AI"
-              subtitle="O CheckSpeech AI é um conjunto de APIs de conversão de fala em
-              textos, bem como a interpretação do sentimento dominante nos
-              dizeres. Nossa solução é treinada em mais de 500.000 horas de
-              áudios, transcritos por humanos de uma ampla variedade de idades,
-              nacionalidades, sotaques e níveis de instruções A API é
-              comercializada no modelo SAAS (software as a service)."
-              color="white"
-              subtitleColor="secondary"
-              className="my-5"
-              fonteSizeSubtitle={6}
-            />
+            <div className="my-5 text-start">
+              <Title className="title-section text-white">CheckSpeech AI</Title>
+              <p className="subtitle-section text-secondary fs-6 mb-0 mt-5">
+                O CheckSpeech AI é um conjunto de APIs de conversão de fala em
+                textos, bem como a interpretação do sentimento dominante nos
+                dizeres. Nossa solução é treinada em mais de 500.000 horas de
+                áudios, transcritos por humanos de uma ampla variedade de
+                idades, nacionalidades, sotaques e níveis de instruções A API é
+                comercializada no modelo SAAS (software as a service).
+              </p>
+            </div>
             <Row className="row-cols-1 row-cols-sm-2 g-4 mb-5 px-5 px-sm-0">
               <Col className="d-flex align-items-center">
                 <div>

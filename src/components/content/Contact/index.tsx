@@ -10,11 +10,11 @@ const Contact: React.FC = () => {
   return (
     <Section id="contact" className="pb-5 mb-5">
       <Container>
-        <Section backgroundColor="dark-blue" className="p-5">
+        <Section backgroundColor="dark-blue" className="py-5 px-3">
           <SectionTitle
             title="Entre em contato conosco"
             color="white"
-            className="mb-5"
+            className="mb-4"
           />
           <ContactForm />
         </Section>

@@ -44,17 +44,17 @@ const ContactForm: React.FC = () => {
   }, []);
 
   return (
-    <Form onSubmit={handleSubmit(onFormSubmit)} className="px-5">
+    <Form onSubmit={handleSubmit(onFormSubmit)}>
       <Row className="row-cols-1 row-cols-md-2 mb-3 g-3">
         <Col>
           <Form.Group>
-            <Form.Label className="text-white">Nome</Form.Label>
+            <Form.Label className="text-white">Nome*</Form.Label>
             <Form.Control type="text" required {...register('name')} />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group>
-            <Form.Label className="text-white">E-mail</Form.Label>
+            <Form.Label className="text-white">E-mail*</Form.Label>
             <Form.Control type="email" required {...register('email')} />
           </Form.Group>
         </Col>
@@ -67,13 +67,12 @@ const ContactForm: React.FC = () => {
               preferredCountries={['br']}
               defaultCountry="br"
               {...register('phone')}
-              separateDialCode
             />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group>
-            <Form.Label className="text-white">País</Form.Label>
+            <Form.Label className="text-white">País*</Form.Label>
             <Form.Select required {...register('country')}>
               {countries.map((country) => (
                 <option key={country} value={country}>
@@ -89,7 +88,11 @@ const ContactForm: React.FC = () => {
         <Form.Control as="textarea" rows={3} {...register('message')} />
       </Form.Group>
       <Form.Group className="py-3 mb-3 d-flex justify-content-center">
-        <ReCAPTCHA sitekey={RECAPTCHA_API_KEY} onChange={handleCaptchaChange} />
+        <ReCAPTCHA
+          sitekey={RECAPTCHA_API_KEY}
+          onChange={handleCaptchaChange}
+          className="d-flex flex-shrink-1"
+        />
       </Form.Group>
       <Form.Group className="text-center">
         <Button

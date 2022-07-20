@@ -6,16 +6,20 @@ import { Link } from 'react-router-dom';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 
-import { Main } from './styled';
+import { Main, SubTitle, Title } from './styled';
 
 const SubmitConfirmation: React.FC = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
       <Header />
-      <Main className="flex-grow-1">
+      <Main className="flex-grow-1 mt-5">
         <Container>
-          <h2 className="text-center text-primary fw-bold fs-7">Obrigado</h2>
-          <p className="text-center mb-5">Em breve retornaremos seu contato!</p>
+          <Title className="text-center text-primary fw-bold fs-7">
+            Obrigado
+          </Title>
+          <SubTitle className="text-center mb-5">
+            Em breve retornaremos seu contato!
+          </SubTitle>
           <div className="d-flex justify-content-center mb-4">
             <Link to="/" className="btn bg-primary">
               <p className="text-white m-0">Voltar</p>
