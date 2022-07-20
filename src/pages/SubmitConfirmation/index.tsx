@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, useEffect } from 'react';
 
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,10 @@ import Header from 'components/Header';
 import { Main, SubTitle, Title } from './styled';
 
 const SubmitConfirmation: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
     <div className="d-flex flex-column min-vh-100">
       <Header />
