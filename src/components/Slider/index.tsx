@@ -53,7 +53,7 @@ const SpotSlider: React.FC<ISpotSliderProps> = ({ companies }) => (
       pauseOnHover
     >
       {companies.map((company) => (
-        <div key={company.id} className="px-3">
+        <div key={company.id} className="mx-3">
           <Cover style={{ backgroundImage: `url(${company.logo})` }} />
         </div>
       ))}

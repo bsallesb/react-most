@@ -59,10 +59,10 @@ const Footer: React.FC = () => {
             <li className="text-white list-unstyled px-2 fs-5 fw-bold">
               Navegue aqui
             </li>
-            <Pill text="Soluções" id="Solutions" />
-            <Pill text="Clientes" id="Clients" />
-            <Pill text="Preços" id="Prices" />
-            <Pill text="Contato" id="Contact" />
+            <Pill text="Soluções" id="#solutions" />
+            <Pill text="Clientes" id="#our-clients" />
+            <Pill text="Preços" id="#prices" />
+            <Pill text="Contato" id="#contact" />
           </ul>
           <div className="d-block d-sm-none col-12 text-center mb-3">
             <img
