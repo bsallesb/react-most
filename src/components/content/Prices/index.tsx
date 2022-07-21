@@ -18,6 +18,7 @@ const Prices: React.FC = () => {
           subtitle="Escolha um dos nossos pacotes"
           color="white"
           subtitleColor="white"
+          className="text-center"
         />
       </Section>
       <Container>
